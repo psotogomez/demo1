@@ -5,6 +5,7 @@ import pandas as pd
 df = pd.read_csv('https://github.com/psotogomez/demo1/blob/main/independencia_geocoded_filtered.csv?raw=True', sep=';')  
 
 app = Dash()
+server=app.server
 
 app.layout = [
     html.H1(children='Independencia Chile', style={'textAlign':'center'}),
